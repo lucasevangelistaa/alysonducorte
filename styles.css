@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.747);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: black;
+    color: white;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 15px black;
+    margin: 20px;
+    border-bottom: 2px solid;
+}
+h2 {
+    margin: auto;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+@media screen and (max-width: 599px) {
+    .container-fluid img {
+        width: 80px;
+    }
+    .nav-link {
+        color: white;
+        margin: 5px;
+        text-align: center;
+    }
+    .nav-link:hover {
+        color: white;
+        border-bottom: 2px solid white;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .container-fluid button {
+        background-color: white;
+    }
+    #status {
+        width: 170px;
+        margin: 5px;
+        color: white;
+        display: flex;
+    }
+    #statusBarbearia {
+        color: rgb(10, 216, 10);
+    }
+    .carousel-item img {
+        margin: auto;
+        width: 90vw;
+        border-radius: 10px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fleximg img {
+        width: 140px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .fleximg p {
+        text-align: center;
+        color: white;
+        font-size: 1.3rem;
+    }
+    .agendamento {
+        margin: auto;
+        padding: 10px;
+        background-color: white;
+        width: 80vw;
+        height: 500px;
+        border-radius: 10px;
+    }
+    label {
+        display: block;
+        text-align: center;
+    }
+    input {
+        display: block;
+        margin: auto;
+        width: 70vw;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    .agendamento button {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 60%;
+        border-radius: 50px;
+        border: none;
+    }
+    .agendamento button:hover {
+        font-weight: bold;
+        background-color: darkgray;
+    }
+    select {
+        display: block;
+        margin: auto;
+        padding: 7px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .flexgallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .flexgallery div {
+        color: white;
+        text-align: center;
+        margin: 10px;
+    }
+    .flexgallery img {
+        width: 120px;
+        border-radius: 50%;
+    }
+    .imglocal img {
+        width: 200px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
+    .unidade {
+        margin: 20px;
+    }
+    #local {
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 80vw;
+        margin: auto;
+        margin-top: 15px;
+        padding: 10px;
+        color: white;
+    }
+    .offcanvas {
+        width: 80vw;
+        height: 100vh;
+    }
+    .offcanvas .offcanvas-body {
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.295);
+    }
+    .offcanvas-body p {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+    footer img {
+        width: 50px;
+    }
+    footer img:hover {
+        width: 55px;
+    }
+    .dev {
+        margin: 10px;
+    }
+    .dev a {
+        text-decoration: none;
+        color: white;
+        font-style: italic;
+    }
+    .dev a:hover {
+        font-weight: bold;
+        border-bottom: 2px solid white;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .container-fluid img {
+        width: 90px;
+    }
+    .nav-link {
+        color: white;
+        margin-right: 10px;
+    }
+    .nav-link:hover {
+        color: white;
+        border-bottom: 2px solid white;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .container-fluid button {
+        background-color: white;
+    }
+    #status {
+        width: 170px;
+        margin: 5px;
+        color: white;
+        display: flex;
+    }
+    #statusBarbearia {
+        color: rgb(10, 216, 10);
+    }
+    .carousel-item img {
+        margin: auto;
+        width: 70vw;
+        border-radius: 10px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .fleximg img {
+        width: 200px;
+        border-radius: 50%;
+        margin: 10px;
+    }
+    .fleximg p {
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .agendamento {
+        margin: auto;
+        padding: 10px;
+        background-color: white;
+        width: 600px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    label {
+        display: block;
+        text-align: center;
+    }
+    input {
+        display: block;
+        margin: auto;
+        width: 400px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    .agendamento button {
+        background-color: lightgray;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 60%;
+        border-radius: 50px;
+        border: none;
+    }
+    .agendamento button:hover {
+        font-weight: bold;
+        background-color: darkgray;
+    }
+    select {
+        display: block;
+        margin: auto;
+        padding: 7px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .flexgallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px;
+    }
+    .flexgallery div {
+        color: white;
+        text-align: center;
+        margin: 10px;
+    }
+    .flexgallery img {
+        width: 200px;
+        border-radius: 50%;
+    }
+    .imglocal img {
+        width: 300px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
+    .unidade {
+        margin: 20px;
+    }
+    #local {
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 500px;
+        margin: auto;
+        margin-top: 15px;
+        padding: 10px;
+        color: white;
+    }
+    .offcanvas {
+        width: 70vw;
+        height: 100vh;
+        text-align: justify;
+    }
+    .offcanvas .offcanvas-body {
+        margin: auto;
+        height: 200px;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.295);
+    }
+    .offcanvas-body p {
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+    footer img {
+        width: 55px;
+    }
+    footer img:hover {
+        width: 60px;
+    }
+    .dev {
+        margin: 10px;
+    }
+    .dev a {
+        text-decoration: none;
+        color: white;
+        font-style: italic;
+    }
+    .dev a:hover {
+        font-weight: bold;
+        border-bottom: 2px solid white;
+    }
+}

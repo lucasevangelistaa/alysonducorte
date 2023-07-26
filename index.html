@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/fav.png" type="image/x-icon">
+    <title>Alyson Du Corte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="imagens/local.jpg" alt="Logo Barbearia Alyson du Corte">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#local">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#agendar">Agendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://wa.me/5598984544326" target="_blank">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                                aria-controls="offcanvasWithBothOptions">Preços</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1>Alyson du Corte</h1>
+        <div id="status">
+            <p>Status: </p>
+            <p id="statusBarbearia"></p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/img01.jpg" class="d-block" alt="Barbearia Alyson du Corte 01">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/img02.jpg" class="d-block" alt="Barbearia Alyson du Corte 02">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/img03.jpg" class="d-block" alt="Barbearia Alyson du Corte 03">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <main>
+        <h1>Nossos Serviços</h1>
+        <div class="container">
+            <div class="fleximg">
+                <img src="imagens/cabelo.jpg" alt="Cabelo">
+                <p>Cabelo</p>
+            </div>
+            <div class="fleximg">
+                <img src="imagens/barba.jpg" alt="Barba">
+                <p>Barba</p>
+            </div>
+            <div class="fleximg">
+                <img src="imagens/pintura.jpg" alt="Pintura">
+                <p>Pinturas</p>
+            </div>
+            <div class="fleximg">
+                <img src="imagens/freestyle.jpg" alt="Freestyles">
+                <p>Freestyles</p>
+            </div>
+            <div class="fleximg">
+                <img src="imagens/sobrancelha.jpg" alt="Sobrancelha">
+                <p>Sobrancelha</p>
+            </div>
+        </div>
+        <h1>Agendamento Online</h1>
+        <div class="agendamento" id="agendar">
+            <h3>Agende seu horário</h3>
+            <label for="nomeCliente">Nome do Cliente:</label>
+            <input type="text" id="nomeCliente" required placeholder="Seu nome"><br>
+            <label for="corteDesejado">Corte Desejado:</label>
+            <input type="text" id="corteDesejado" required placeholder="Qual corte deseja?"><br>
+            <label for="">Pintar(Opcional):</label>
+            <input type="text" id="pintar" placeholder="Deseja pintar?"><br>
+            <label for="tipoPintura">Qual tipo de Pintura deseja?(Opcional)</label>
+            <select id="tipoPintura">
+                <option value=" ">Escolha aqui</option>
+                <option value="Nevou">Nevou</option>
+                <option value="Pigmentação">Pigmentação</option>
+                <option value="Reflexo">Reflexo</option>
+                <option value="Luzes">Luzes</option>
+            </select>
+            <button onclick="agendarHorario()">Agendar</button>
+        </div>
+
+        <div class="offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Tabelas de cortes e seus preços.</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Corte social: R$ 10,00</p>
+                <p>Degradê na Máquina: R$ 12,00</p>
+                <p>Degradê Navalhado: R$ 15,00</p>
+                <p>Degradê + Pigmentação: R$ 20,00</p>
+                <p>Luzes: R$ 25,00</p>
+                <p>Nevou: R$ 45,00</p>
+                <p>Luzes + Corte: R$ 35,00</p>
+                <p>Nevou + Corte: R$ 55,00</p>
+            </div>
+        </div>
+    </main>
+    <section id="galeria">
+        <h1>Galeria de cortes</h1>
+        <div class="flexgallery">
+            <div class="imggallery">
+                <img src="imagens/dujacav.jpg" alt="Corte Du Jaca em V">
+                <p>Du Jaca em V</p>
+            </div>
+            <div class="imggallery">
+                <img src="imagens/americano.jpg" alt="Corte Americano">
+                <p>Americano</p>
+            </div>
+            <div class="imggallery">
+                <img src="imagens/dujacacurto.jpg" alt="Corte Du Jaca Curto">
+                <p>Du Jaca Curto</p>
+            </div>
+            <div class="imggallery">
+                <img src="imagens/dujaca.jpg" alt="Corte Du Jaca">
+                <p>Du Jaca</p>
+            </div>
+            <div class="imggallery">
+                <img src="imagens/moicaamerica.jpg" alt="Corte Moica América">
+                <p>Moica América</p>
+            </div>
+            <div class="imggallery">
+                <img src="imagens/moicatrem.jpg" alt="Corte MoicaTrem">
+                <p>MoicaTrem</p>
+            </div>
+            <div class="imggallery">
+                <img src="imagens/moicatremv.jpg" alt="Corte MoicaTrem em V">
+                <p>MoicaTrem em V</p>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div class="unidade">
+            <h1>Nossa Unidade</h1>
+            <div class="imglocal">
+                <img src="imagens/local.jpg" alt="Localização Alyson du Corte">
+            </div>
+            <div id="local">
+                <h6>Rua: Maria Bacelar</h6>
+                <h6>Bairro: Centro</h6>
+                <h6>Numero: sem número</h6>
+                <h6>Proximo ao: Estágio Tancredo Neves</h6>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <p>&copy;Barbearia Alyson du Corte 2023</p>
+        <a href="https://www.instagram.com/alyson_dcorte/" target="_blank"><img src="imagens/instalogo.png"
+                alt="Logo Instagram"></a>
+        <a href="https://wa.me/5598984544326" target="_blank"><img src="imagens/logowhatsapp.png"
+                alt="Logo WhatsApp"></a>
+        <p class="dev">Desenvolvido por <a href="">DevLucas</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
