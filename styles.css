@@ -148,7 +148,7 @@ h3 {
     }
     .offcanvas {
         width: 80vw;
-        height: 100vh;
+        height: 100%;
     }
     .offcanvas .offcanvas-body {
         width: 250px;
@@ -308,12 +308,10 @@ h3 {
     }
     .offcanvas {
         width: 70vw;
-        height: 100vh;
-        text-align: justify;
+        height: 100%;
     }
     .offcanvas .offcanvas-body {
         margin: auto;
-        height: 200px;
         width: 500px;
         border-radius: 10px;
         box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.295);
